@@ -21,8 +21,8 @@ func CreateToken(uuid uint32, phone int) string {
 
 	tokenString, err := token.SignedString(secretKey)
 	if err != nil {
-		logrus.Error("JWT Failed to sign ", err)
-		logrus.Info(secretKey)
+		logrus.Error("JWT Failed to sign: ", err)
+		logrus.Info("JWT signing error occurred")
 		return ""
 	}
 	return tokenString
