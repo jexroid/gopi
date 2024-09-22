@@ -1,14 +1,14 @@
 # gopi
 
-this project was made with GORMand postgres
+this project was made with GORM and postgres
 hashing strategy is argon2 because of speed efficiency
 
 ## env management
-for this project `.env` was available for demo
-but i recomend using env-vault for managing the project as the vault address and other details are available in the [Link](https://www.dotenv.org/)
+for this project `.env` is available for demo
+but i recomend using env-vault for managing the environment variables of the project as the details are available in the [Link](https://www.dotenv.org/)
 
 ## How can I test the Endpoints?
-there is a JSON file that is used for testing the endpoints which are written with small test cases
+there is a JSON file named [go Auth.postman_collection](https://github.com/jexroid/gopi/blob/main/go%20Auth.postman_collection.json) that is used for testing the endpoints which are written with small test cases
 
 ## Testing
 the testing unit lacks good Mocking techniques due to the lack of time.
