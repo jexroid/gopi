@@ -56,7 +56,7 @@ func (db Database) Signup(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	logrus.Info(user)
+	// logrus.Info(user) // Removed to avoid logging sensitive information
 
 	resault := db.DB.Table("User").Create(&user)
 	logrus.Error(resault.Error)
