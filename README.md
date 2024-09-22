@@ -4,7 +4,7 @@ this project was made with GORM and postgres
 hashing strategy is argon2 because of speed efficiency
 
 ## env management
-for this project `.env` is available for demo
+for this project `.env` is available for demo but you can configure env-vault to download the `.env` for you
 but i recomend using env-vault for managing the environment variables of the project as the details are available in the [Link](https://www.dotenv.org/)
 
 ## How can I test the Endpoints?
