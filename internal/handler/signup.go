@@ -56,7 +56,6 @@ func (db Database) Signup(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	logrus.Infof("User registered with UUID: %s", user.UUID)
 
 	resault := db.DB.Table("User").Create(&user)
 	logrus.Error(resault.Error)
