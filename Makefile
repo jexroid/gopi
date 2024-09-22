@@ -7,7 +7,7 @@ build:
 	@echo "Building..."
 
 
-	@go build -o tmp/main.exe main.go
+	@go build -o tmp/main main.go
 
 # Run the application
 run:
@@ -36,7 +36,7 @@ docker-down:
 # Test the application
 test:
 	@echo "Testing..."
-	@go test ./tests -v
+	@go test -v ./... 
 
 # Clean the binary
 clean:
