@@ -73,7 +73,6 @@ func (db Database) Signup(w http.ResponseWriter, r *http.Request) {
 		//	TODO: Telegram Bot. (Read the telegram Code)
 	}
 	jwt := pkg.CreateToken(user.UUID, user.Phone)
-	logrus.Infof("JWT created for user with UUID: %s", user.UUID)
 
 	cookie := &http.Cookie{
 		Name:     "identity",
