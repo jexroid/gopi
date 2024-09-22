@@ -56,7 +56,6 @@ func (db Database) Signup(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// logrus.Info(user) // Removed to avoid logging sensitive information
 
 	resault := db.DB.Table("User").Create(&user)
 	logrus.Error(resault.Error)
@@ -74,7 +73,6 @@ func (db Database) Signup(w http.ResponseWriter, r *http.Request) {
 		//	TODO: Telegram Bot. (Read the telegram Code)
 	}
 	jwt := pkg.CreateToken(user.UUID, user.Phone)
-	logrus.Info(jwt, user)
 
 	cookie := &http.Cookie{
 		Name:     "identity",
